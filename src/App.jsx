@@ -67,7 +67,7 @@ addStudent (studentName){
 
     /* Change below to render students*/
 
-    /*if (this.state.buttonClicked === "students") {
+    if (this.state.buttonClicked === "students") {
       tabChoice = (
         <List
           placeholder="Add Assignment..." 
@@ -76,7 +76,7 @@ addStudent (studentName){
           title="Student Roster"
         />
       );
-    }*/
+    }
 
     /* Uncomment lines below to render grades*/
     /*if (this.state.buttonClicked === "grades") {
