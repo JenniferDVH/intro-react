@@ -34,11 +34,12 @@ class App extends React.Component {
   }
 
   /*Write an addStudent method here*/
-addStudent (studentName){
-  this.setState({
-    students: this.state.students.concat(studentName)
-  });
-}
+  addStudent (studentName ) {
+    this.setState({
+      students: this.state.students.concat(studentName)
+    });
+  }
+
   addGrade(assignment, student, score) {
     let grades = this.state.grades;
     let assignmentName = assignment;
@@ -70,7 +71,7 @@ addStudent (studentName){
     if (this.state.buttonClicked === "students") {
       tabChoice = (
         <List
-          Add student="Add Assignment..." 
+          placeholder="Add Student..." 
           currList={this.state.students}
           addFunction={this.addStudent}
           title="Student Roster"
@@ -94,7 +95,7 @@ addStudent (studentName){
       <div>
         <div className="Box Box--spacious f4">
           <div className="Box-header">
-          <h3 className="Box-title d-flex flex-justify-center">GradeBook</h3>
+            <h3 className="Box-title d-flex flex-justify-center">GradeBook</h3>
           </div>
         </div>
         <nav className="UnderlineNav d-flex flex-justify-center">
